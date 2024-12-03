@@ -1,0 +1,191 @@
+body {
+    height: 100vh;
+    font-family: "Open Sans";
+}
+
+/* BANNER */
+.banner {
+    background-image: url('../img/header/header-background-02.png');
+    color: white;
+    padding: 70px 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+    height: 512px;
+}
+
+.banner h1 {
+    font-family: "Luckiest Guy";
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.banner p {
+    font-weight: 400;
+    line-height: 21px;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttons a {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    width: 303px;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.buttons a:first-child {
+    background-color: white;
+    color: black;
+}
+
+.buttons a:last-child {
+    background-color: black;
+    color: white;
+}
+
+/* MAIN */
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 40px 24px;
+    gap: 28px;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 28px
+}
+
+main section:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+section > img {
+    object-fit: contain;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Open Sans";
+    color: #23272A;
+    line-height: 32px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Luckiest Guy";
+    color: #23272A;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #23272A;
+    padding: 44px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 165px;
+    height: 45px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        align-items: center;
+        background-image: url('../img/header/header-background-01.png');
+        height: 459px;
+    }
+    
+    .banner h1 {
+        font-size: 56px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .banner p {
+        text-align: center;
+        width: 757px;
+    }
+
+    .buttons {
+        flex-flow: row nowrap;
+    }
+
+    .buttons a {
+        padding: 0px 24px;
+        height: 44px;
+        width: max-content;
+    }
+
+    section {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section > img {
+        width: 607px;
+        height: 394px;
+    }
+
+    section > div {
+        width: 374px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    section > div > h3 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 46px;
+    }
+
+    #section-2 {
+        flex-direction: row-reverse;
+    }
+
+    #section-4 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #section-4 h2 {
+        font-size: 40px;
+        width: 608px;
+        text-align: center;
+    }
+
+    #section-4 p {
+        width: 802px;
+        text-align: center;
+    }
+
+    #section-4 img {
+        width: 784px;
+        height: 508px;
+    }
+}
